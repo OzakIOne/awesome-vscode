@@ -6,19 +6,14 @@
 <br/>
 <div align="center">
 
-A curated list of delightful <a href="https://code.visualstudio.com/">Visual Studio Code</a>
-packages and resources. For more awesomeness, check
-out <a href="https://github.com/sindresorhus/awesome">awesome</a>.
-<br/>
-<br/>
-<img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"/>
-<img src="https://travis-ci.org/viatsko/awesome-vscode.svg" alt="Build Status"/>
+A curated list of delightful [Visual Studio Code](https://code.visualstudio.com/) packages and resources. For more awesomeness, check out [awesome](https://github.com/sindresorhus/awesome).
+
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Build Status](https://travis-ci.org/viatsko/awesome-vscode.svg)](https://travis-ci.org/viatsko/awesome-vscode)
 </div>
 <br/>
 
 # Table of Contents
 
-- [Table of Contents](#table-of-contents)
 - [Official](#official)
 - [Syntax](#syntax)
 - [Migrating from other editors](#migrating-from-other-editors)
@@ -27,46 +22,35 @@ out <a href="https://github.com/sindresorhus/awesome">awesome</a>.
   - [Migrating from Sublime Text](#migrating-from-sublime-text)
   - [Migrating from Visual Studio](#migrating-from-visual-studio)
   - [Migrating from Intellij IDEA](#migrating-from-intellij-idea)
-  - [Camel Humps](#camel-humps)
+  - [Camel humps](#camel-humps)
 - [Using VS Code with particular technologies](#using-vs-code-with-particular-technologies)
 - [Lint and IntelliSense](#lint-and-intellisense)
   - [1C](#1c)
-  - [AutoHotkey](#autohotkey)
-    - [AutoHotkey Plus](#autohotkey-plus)
+  - [AutoHotkey](#AutoHotkey)
   - [Bash](#bash)
     - [Bash IDE](#bash-ide)
     - [Bash Debug](#bash-debug)
     - [Shellman](#shellman)
   - [C++](#c)
-      - [More](#more)
-  - [C\#, ASP .NET and .NET Core](#c-asp-net-and-net-core)
+  - [C#](#c-asp-net-and-net-core)
   - [Clojure](#clojure)
-    - [Calva](#calva)
   - [CSS](#css)
-    - [CSS Peek](#css-peek)
   - [Go](#go)
   - [Groovy](#groovy)
   - [Haskell](#haskell)
-  - [HLSL](#hlsl)
   - [Shell](#shell)
   - [Java](#java)
   - [JavaScript](#javascript)
-    - [Linters](#linters)
-    - [Framework-specific](#framework-specific)
-    - [Debugger for Chrome](#debugger-for-chrome)
-    - [Facebook Flow](#facebook-flow)
-    - [TypeScript](#typescript)
-    - [Debugger for Chrome](#debugger-for-chrome-1)
+  - [Typescript](#typescript)
   - [Markdown](#markdown)
     - [markdownlint](#markdownlint)
-    - [Markdown All in One](#markdown-all-in-one)
+    - [Markdown All in one](#markdown-all-in-one)
     - [Markdown Emoji](#markdown-emoji)
   - [PHP](#php)
     - [IntelliSense](#intellisense)
     - [Laravel](#laravel)
     - [Twig](#twig)
     - [Smarty](#smarty)
-      - [Smarty Template Support](#smarty-template-support)
     - [Other extensions](#other-extensions)
     - [Read more](#read-more)
   - [POV-Ray](#pov-ray)
@@ -75,45 +59,35 @@ out <a href="https://github.com/sindresorhus/awesome">awesome</a>.
   - [ReasonML](#reasonml)
   - [Rust](#rust)
   - [Terraform](#terraform)
-- [GitHub](#github)
-  - [GitHub](#github-1)
-  - [GitHub Pull Requests and Issues](#github-pull-requests-and-issues)
-  - [GistPad](#gistpad)
-  - [GitHub Actions](#github-actions)
-  - [GitHub Repositories](#github-repositories)
-  - [GitHub Manager](#github-manager)
-  - [GitHub Pull Request Monitor](#github-pull-request-monitor)
 - [Productivity](#productivity)
   - [ARM Template Viewer](#arm-template-viewer)
   - [Azure Cosmos DB](#azure-cosmos-db)
   - [Azure IoT Toolkit](#azure-iot-toolkit)
-  - [Better Snippets](#better-snippets)
   - [Bookmarks](#bookmarks)
-  - [Bundle Size](#bundle-size)
   - [Color Tabs](#color-tabs)
   - [Create tests](#create-tests)
-  - [Dendron](#dendron)
   - [Deploy](#deploy)
   - [Duplicate Action](#duplicate-action)
   - [Error Lens](#error-lens)
-  - [Toggle](#toggle)
   - [ES7 React/Redux/GraphQL/React-Native snippets](#es7-reactreduxgraphqlreact-native-snippets)
-    - [Gi](#gi)
+  - [Gi](#gi)
+  - [GistPad](#gistpad)
   - [Git History](#git-history)
   - [Git Project Manager](#git-project-manager)
   - [GitLink](#gitlink)
   - [GitLens](#gitlens)
   - [Git Indicators](#git-indicators)
+  - [GitDuck](#gitduck)
+  - [GitHub](#github)
+  - [GitHub Pull Request Monitor](#github-pull-request-monitor)
   - [GitLab Workflow](#gitlab-workflow)
-      - [Gradle Tasks](#gradle-tasks)
-  - [httpYac](#httpyac)
+  - [Gradle Tasks](#gradle-tasks)
   - [Icon Fonts](#icon-fonts)
   - [Import Cost](#import-cost)
   - [Jira and Bitbucket](#jira-and-bitbucket)
   - [JS Parameter Annotations](#js-parameter-annotations)
   - [Jumpy](#jumpy)
   - [Kanban](#kanban)
-  - [Live Code](#live-code)
   - [Live Server](#live-server)
   - [Multiple clipboards](#multiple-clipboards)
   - [ngrok for VSCode](#ngrok-for-vscode)
@@ -121,108 +95,106 @@ out <a href="https://github.com/sindresorhus/awesome">awesome</a>.
   - [i18n Ally](#i18n-ally)
   - [Instant Markdown](#instant-markdown)
   - [npm Intellisense](#npm-intellisense)
-  - [Parameter Hints](#parameter-hints)
   - [Partial Diff](#partial-diff)
-    - [Paste JSON as Code](#paste-json-as-code)
-  - [Path Autocomplete](#path-autocomplete)
+  - [Paste JSON as Code](#paste-json-as-code)
   - [Path IntelliSense](#path-intellisense)
   - [Power Tools](#power-tools)
   - [PrintCode](#printcode)
-  - [Project Manager](#project-manager)
   - [Project Dashboard](#project-dashboard)
+  - [Project Manager](#project-manager)
+  - [REST Client](#rest-client)
   - [Rainbow CSV](#rainbow-csv)
   - [Remote Development](#remote-development)
   - [Remote VSCode](#remote-vscode)
-  - [REST Client](#rest-client)
+  - [Settings Sync](#settings-sync)
   - [Text Power Tools](#text-power-tools)
-  - [Tidy Explorer](#tidy-explorer)
   - [Todo Tree](#todo-tree)
   - [Toggle Quotes](#toggle-quotes)
   - [Typescript Destructure](#typescript-destructure)
   - [WakaTime](#wakatime)
   - [Yo](#yo)
-  - [Timing](#timing)
-- [Formatting & Beautification](#formatting--beautification)
+- [Formatting/Beautification](#formatting--beautification)
   - [Better Align](#better-align)
   - [Auto Close Tag](#auto-close-tag)
   - [Auto Rename Tag](#auto-rename-tag)
   - [beautify](#beautify)
-    - [html2pug](#html2pug)
+  - [html2pug](#html2pug)
   - [ECMAScript Quotes Transformer](#ecmascript-quotes-transformer)
   - [Paste and Indent](#paste-and-indent)
   - [Sort Lines](#sort-lines)
   - [Surround](#surround)
   - [Wrap Selection](#wrap-selection)
   - [Formatting Toggle](#formatting-toggle)
+  - [Bracket Pair Colorizer](#bracket-pair-colorizer)
   - [Auto Import](#auto-import)
   - [shell-format](#shell-format)
   - [Vscode Google Translate](#vscode-google-translate)
-  - [Explorer Icons](#explorer-icons)
-    - [City Lights Icons](#city-lights-icons)
-    - [Feather Product Icons](#feather-product-icons)
-    - [VSCode Icons](#vscode-icons)
-    - [Seti Icons](#seti-icons)
-    - [Material Icon Theme](#material-icon-theme)
+- [Explorer Icons](#explorer-icons)
+  - [City Lights Icons](#city-lights-icons)
+  - [VSCode Icons](#vscode-icons)
+  - [Seti-UI](#seti-icons)
+  - [Material-Icon-Theme](#material-icon-theme)
 - [Uncategorized](#uncategorized)
+  - [Ascii Tree Generator](#ascii-tree-generator)
   - [Browser Preview](#browser-preview)
-  - [CodeRoad](#coderoad)
+  - [Carbon-now-sh](#carbon-now-sh)
   - [Code Runner](#code-runner)
   - [Code Time](#code-time)
   - [Color Highlight](#color-highlight)
   - [Output Colorizer](#output-colorizer)
   - [Dash](#dash)
+  - [Debugger for Chrome](#debugger-for-chrome)
+  - [ECMAScript Quotes Transformer](#ecmascript-quotes-transformer)
   - [Edit with Shell Command](#edit-with-shell-command)
   - [Editor Config for VS Code](#editor-config-for-vs-code)
   - [ftp-sync](#ftp-sync)
   - [Highlight JSX/HTML tags](#highlight-jsxhtml-tags)
   - [Indent Rainbow](#indent-rainbow)
   - [iTerm2 Theme Sync](#iterm2-theme-sync)
-  - [Password Generator](#password-generator)
   - [PlatformIO](#platformio)
   - [Polacode](#polacode)
-  - [carbon-now-sh](#carbon-now-sh)
   - [Quokka](#quokka)
+  - [Remote Workspace](#remote-workspace)
   - [Runner](#runner)
   - [Slack](#slack)
+  - [SmoothType](#smoothtype)
   - [Spotify](#spotify)
   - [SVG](#svg)
   - [SVG Viewer](#svg-viewer)
   - [Text Marker (Highlighter)](#text-marker-highlighter)
   - [ESDOC MDN](#esdoc-mdn)
   - [Interface generator](#interface-generator)
-  - [JFrog](#jfrog)
 - [Themes](#themes)
-  - [UI](#ui)
-  - [Syntax](#syntax-1)
-    - [2077 theme by Endormi](#2077-theme-by-endormi)
-    - [An Old Hope Theme by Dustin Sanders](#an-old-hope-theme-by-dustin-sanders)
-    - [Ariake Dark by wart](#ariake-dark-by-wart)
-    - [Atom One Dark Theme by Mahmoud Ali](#atom-one-dark-theme-by-mahmoud-ali)
-    - [Atomize by emroussel](#atomize-by-emroussel)
-    - [Ayu by teabyii](#ayu-by-teabyii)
-    - [Borealis Theme by Alexander Eckert](#borealis-theme-by-alexander-eckert)
-    - [Captain Sweetheart by ultradracula](#captain-sweetheart-by-ultradracula)
-    - [City Lights by Yummygum](#city-lights-by-yummygum)
-    - [Cobalt2 Theme Official by Wes Bos](#cobalt2-theme-official-by-wes-bos)
-    - [Dracula Official by Dracula Theme](#dracula-official-by-dracula-theme)
-    - [Edge by Bogdan Lazar](#edge-by-bogdan-lazar)
-    - [Eva Theme by fisheva](#eva-theme-by-fisheva)
-    - [Fairy Floss by nopjmp and sailorhg](#fairy-floss-by-nopjmp-and-sailorhg)
-    - [GitHub Theme by Thomas Pink](#github-theme-by-thomas-pink)
-    - [Jellybeans Theme by Dimitar Nonov](#jellybeans-theme-by-dimitar-nonov)
-    - [Material Palenight Theme by whizkydee](#material-palenight-theme-by-whizkydee)
-    - [Material Theme by Mattia Astorino](#material-theme-by-mattia-astorino)
-    - [Mno by u29dc](#mno-by-u29dc)
-    - [Monokai Oblique by pushqrdx](#monokai-oblique-by-pushqrdx)
-    - [Monokai Pro by monokai (commercial)](#monokai-pro-by-monokai-commercial)
-    - [Night Owl by Sarah Drasner](#night-owl-by-sarah-drasner)
-    - [Plastic by Will Stone](#plastic-by-will-stone)
-    - [Nord by arcticicestudio](#nord-by-arcticicestudio)
-    - [Rainglow by Dayle Rees](#rainglow-by-dayle-rees)
-    - [Relaxed Theme by Michael Kühnel](#relaxed-theme-by-michael-kühnel)
-    - [Shades of Purple by Ahmad Awais](#shades-of-purple-by-ahmad-awais)
-    - [Slime Theme by smlombardi](#slime-theme-by-smlombardi)
-    - [Niketa Theme by Dejan Toteff](#niketa-theme-by-dejan-toteff)
+  - [2077 Theme by Endormi](#2077-theme-by-endormi)
+  - [An Old Hope Theme by Dustin Sanders](#an-old-hope-theme-by-dustin-sanders)
+  - [Ariake Dark by wart](#ariake-dark-by-wart)
+  - [Atom One Dark Theme by Mahmoud Ali](#atom-one-dark-theme-by-mahmoud-ali)
+  - [Atomize by emroussel](#atomize-by-emroussel)
+  - [Ayu by teabyii](#ayu-by-teabyii)
+  - [Borealis Theme by Alexander Eckert](#borealis-theme-by-alexander-eckert)
+  - [Captain Sweetheart by ultradracula](#captain-sweetheart-by-ultradracula)
+  - [City Lights Theme by Yummygum](#city-lights-by-yummygum)
+  - [Cobalt2 Theme Official by Wes Bos](#cobalt2-theme-official-by-wes-bos)
+  - [Dracula Official by Dracula Theme](#dracula-official-by-dracula-theme)
+  - [Edge by Bogdan Lazar](#edge-by-bogdan-lazar)
+  - [Eva Theme by fisheva](#eva-theme-by-fisheva)
+  - [Fairyfloss by nopjmp and sailorhg](#fairy-floss-by-nopjmp-and-sailorhg)
+  - [GitHub Theme by Thomas Pink](#github-theme-by-thomas-pink)
+  - [Jellybeans Theme by Dimitar Nonov](#jellybeans-theme-by-dimitar-nonov)
+  - [Material Palenight Theme by whizkydee](#material-palenight-theme-by-whizkydee)
+  - [Material Theme by Mattia Astorino](#material-theme-by-mattia-astorino)
+  - [Mno by u29dc](#mno-by-u29dc)
+  - [Monokai Oblique](#monokai-oblique-by-pushqrdx)
+  - [Monokai Pro by monokai (commercial)](#monokai-pro-by-monokai-commercial)
+  - [Night Owl by Sarah Drasner](#night-owl-by-sarah-drasner)
+  - [Plastic by Will Stone](#plastic-by-will-stone)
+  - [Niketa Theme by Dejan Toteff](#niketa-theme-by-dejan-toteff)
+  - [Nord by arcticicestudio](#nord-by-arcticicestudio)
+  - [Rainglow by Dayle Rees](#rainglow-by-dayle-rees)
+  - [Relaxed Theme by Michael Kühnel](#relaxed-theme-by-michael-kühnel)
+  - [Shades of Purple by Ahmad Awais](#shades-of-purple-by-ahmad-awais)
+  - [Slime Theme by smlombardi](#slime-theme-by-smlombardi)
+  - [Tinacious design syntax by Tinacious](#tinacious-design-syntax-by-tinacious)
 - [People to Follow](#people-to-follow)
 - [Resources for extension developers](#resources-for-extension-developers)
   - [Documentation](#documentation)
@@ -276,7 +248,7 @@ Language packages extend the editor with syntax highlighting and/or snippets for
 - [Protobuf](https://marketplace.visualstudio.com/items?itemName=peterj.proto)
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=groksrc.ruby)
 - [Scala](https://marketplace.visualstudio.com/items?itemName=scala-lang.scala)
-- [Shaders (HLSL, GLSL, Cg)](https://marketplace.visualstudio.com/items?itemName=slevesque.shader)
+- [Shaders (*HLSL*, *GLSL*, *Cg*) ](https://marketplace.visualstudio.com/items?itemName=slevesque.shader)
 - [Stylus](https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus)
 - [Swift](https://marketplace.visualstudio.com/items?itemName=Kasik96.swift)
 - [VEX](https://marketplace.visualstudio.com/items?itemName=melmass.vex)
@@ -326,7 +298,7 @@ Unlike some other editors, VS Code supports IntelliSense, linting, outline out-o
 
 ## 1C
 
-- [1C/OScript](https://marketplace.visualstudio.com/items?itemName=1c-syntax.language-1c-bsl) - rich 1С:Enterprise 8 (BSL) language support in VSC - add syntax highlighting to *.bsl и*.os files in VSC, add IntelliSense and syntax helper for 1С lang
+- [1C/OScript](https://marketplace.visualstudio.com/items?itemName=1c-syntax.language-1c-bsl) - rich 1С:Enterprise 8 (BSL) language support in VSC - add syntax highlighting to *.bsl и *.os files in VSC, add IntelliSense and syntax helper for 1С lang
 
 ## AutoHotkey
 
@@ -355,11 +327,11 @@ Unlike some other editors, VS Code supports IntelliSense, linting, outline out-o
 - [gnu-global-tags](https://marketplace.visualstudio.com/items?itemName=austin.code-gnu-global) - Provide Intellisense for C/C++ with the help of the GNU Global tool.
 - [YouCompleteMe](https://marketplace.visualstudio.com/items?itemName=RichardHe.you-complete-me) - Provides semantic completions for C/C++ (and TypeScript, JavaScript, Objective-C, Golang, Rust) using [YouCompleteMe](http://ycm-core.github.io/YouCompleteMe/).
 - [C/C++ Clang Command Adapter](https://github.com/mitaki28/vscode-clang) - Completion and Diagnostic for C/C++/Objective-C using Clang command.
-- [CQuery](https://github.com/cquery-project/vscode-cquery) - [C/C++ language server](https://github.com/jacobdufault/cquery) supporting multi-million line code base, powered by libclang. Cross references, completion, diagnostics, semantic highlighting and more.
+- [CQuery](https://github.com/cquery-project/vscode-cquery) - [C/C++ language server](https://github.com/cquery-project/cquery) supporting multi-million line code base, powered by libclang. Cross references, completion, diagnostics, semantic highlighting and more.
 
 #### More
 
-- [Microsoft's tutorial on using VSCode for remote C/C++ development](https://devblogs.microsoft.com/cppblog/vscode-cpp-may-2019-update/)
+* [Microsoft's tutorial on using VSCode for remote C/C++ development](https://devblogs.microsoft.com/cppblog/vscode-cpp-may-2019-update/)
 
 ## C\#, ASP .NET and .NET Core
 
@@ -384,7 +356,7 @@ Unlike some other editors, VS Code supports IntelliSense, linting, outline out-o
 ### [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
 > Peek or Jump to a CSS definition directly from HTML, just like in Brackets!
 
-![CSS Peek](https://raw.githubusercontent.com/pranaygp/vscode-css-peek/master/readme/symbolProvider.gif)
+![CSS Peek](https://github.com/pranaygp/vscode-css-peek/blob/master/working.gif)
 
 - [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) - Lint CSS/SCSS.
 - [Autoprefixer](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer)
@@ -409,12 +381,6 @@ Unlike some other editors, VS Code supports IntelliSense, linting, outline out-o
 
 - [haskell-linter](https://marketplace.visualstudio.com/items?itemName=hoovercj.haskell-linter)
 - [Haskell IDE engine](https://marketplace.visualstudio.com/items?itemName=alanz.vscode-hie-server) - provides [language server](https://github.com/haskell/haskell-ide-engine) for stack and cabal projects.
-
-## HLSL
-
-- [HLSL Tools](https://marketplace.visualstudio.com/items?itemName=TimGJones.hlsltools) - provides rich language support for editing HLSL files in VS Code
-  ![Example of statement completion using HLSL Tools for VS Code](https://github.com/tgjones/HlslTools/raw/master/src/ShaderTools.VSCode/art/statement-completion.gif)
-
 ## Shell
 
 - [autocomplate-shell](https://marketplace.visualstudio.com/items?itemName=truman.autocomplate-shell)
@@ -429,28 +395,21 @@ Unlike some other editors, VS Code supports IntelliSense, linting, outline out-o
 
 ## JavaScript
 
-- [TS/JS postfix completion](https://marketplace.visualstudio.com/items?itemName=ipatalas.vscode-postfix-ts)
-
-![TS/JS postfix completion demo](https://github.com/ipatalas/vscode-postfix-ts/raw/master/images/demo-multiline.gif)
-
 - [Babel JavaScript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)
 - [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) - This extension provides AI-assisted development features including autocomplete and other insights based on understanding your code context.
 ![Visual Studio IntelliCode](https://docs.microsoft.com/en-us/visualstudio/intellicode/media/python-intellicode.gif)
 
 See the difference between these two [here](https://github.com/michaelgmcd/vscode-language-babel/issues/1)
 
-### Linters
-
-- [tslint (deprecated)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin) - TSLint for Visual Studio Code (with `"tslint.jsEnable": true`).
+- [tslint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin) - TSLint for Visual Studio Code (with `"tslint.jsEnable": true`).
 - [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Linter for [eslint](https://eslint.org/).
 - [XO](https://marketplace.visualstudio.com/items?itemName=samverschueren.linter-xo) - Linter for [XO](https://github.com/xojs/xo).
 - [AVA](https://marketplace.visualstudio.com/items?itemName=samverschueren.ava) - Snippets for [AVA](https://github.com/avajs/ava).
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Linter, Formatter and Pretty printer for [Prettier](https://github.com/prettier/prettier-vscode).
-- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - Spelling Checker for Visual Studio Code (English). Also supports other languages via external extensions.
-
 - [Schema.org Snippets](https://marketplace.visualstudio.com/items?itemName=austinleegordon.vscode-schema-dot-org) - Snippets for [Schema.org](https://schema.org/).
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - Spelling Checker for Visual Studio Code.
 
-### Framework-specific
+Framework-specific:
 
 - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) - Toolkit for Vue.js
 ![Vetur](screenshots/Vetur.png)
@@ -466,7 +425,8 @@ See the difference between these two [here](https://github.com/michaelgmcd/vscod
 
 ### TypeScript
 
-- [tslint (deprecated)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin) - TSLint for Visual Studio Code.
+- [tslint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint) - TSLint for Visual Studio Code
+- [TypeScript Hero](https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero) - Code outline view of your open TS, sort and organize your imports.
 
 ### [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
@@ -583,40 +543,6 @@ To enable Emmet support in .twig files, you'll need to have the following in you
 
 - [Terraform](https://marketplace.visualstudio.com/items?itemName=hashicorp.terraform) - Syntax highlighting, linting, formatting, and validation for Hashicorp's Terraform
 
-# GitHub
-
-## [GitHub](https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-github)
-
-> Provides GitHub workflow support. For example browse project, issues, file (the current line), create and manage pull request. Support for other providers (e.g. gitlab or bitbucket) is planned.
-
-## [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
-
-> Review and manage GitHub pull requests and issues
-
-## [GistPad](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.gistfs)
-
-> Allows you to manage GitHub Gists entirely within the editor. You can open, create, delete, fork, star and clone gists, and then seamlessly begin editing files as if they were local. It's like your very own developer library for building and referencing code snippets, commonly used config/scripts, programming-related notes/documentation, and interactive samples.
-
-![GistPad gist management](https://user-images.githubusercontent.com/116461/69910156-96274b80-13fe-11ea-9be4-d801f4e9c377.gif)
-
-## [GitHub Actions](https://marketplace.visualstudio.com/items?itemName=cschleiden.vscode-github-actions)
-
-> Shows GitHub Actions workflows and runs
-
-## [GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=GitHub.remotehub)
-
-> Remotely browse and edit any GitHub repository
-
-## [GitHub Manager](https://marketplace.visualstudio.com/items?itemName=zardoy.github-manager)
-
-> Fast way to switch between cloned repos
-
-## [GitHub Pull Request Monitor](https://marketplace.visualstudio.com/items?itemName=erichbehrens.pull-request-monitor)
-
-> This extension uses the GitHub api to monitor the state of your pull requests and let you know when it's time to merge or if someone requested changes.
-
-![GitHub Pull Request Monitor](https://raw.githubusercontent.com/erichbehrens/pull-request-monitor/master/images/statusBarItems.png)
-
 # Productivity
 
 ## [ARM Template Viewer](https://marketplace.visualstudio.com/items?itemName=bencoleman.armview)
@@ -637,19 +563,9 @@ To enable Emmet support in .twig files, you'll need to have the following in you
 
 ![Code snippets for Azure IoT Hub screenshot](https://raw.githubusercontent.com/formulahendry/vscode-azure-iot-toolkit/master/images/device-explorer.png)
 
-## [Better Snippets](https://marketplace.visualstudio.com/items?itemName=zardoy.better-snippets)
-
-> Alternative to VSCode builtin snippets with more control
-
 ## [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 
 > Mark lines and jump to them
-
-## [Bundle Size](https://marketplace.visualstudio.com/items?itemName=ambar.bundle-size)
-
-> Display the bundle size of npm packages
-
-![Display the bundle size of npm packages](https://raw.githubusercontent.com/ambar/vscode-bundle-size/main/images/preview.png)
 
 ## [Color Tabs](https://marketplace.visualstudio.com/items?itemName=orepor.color-tabs-vscode-ext)
 
@@ -662,12 +578,6 @@ To enable Emmet support in .twig files, you'll need to have the following in you
 > An extension to quickly generate test files.
 
 ![Create tests extension animation](https://media.giphy.com/media/1iqPhENd8SLd9SggeX/giphy.gif)
-
-## [Dendron](https://marketplace.visualstudio.com/items?itemName=dendron.dendron)
-
-> An extension that can turn Visual Studio Code into a PKM tool, with excellent UX, using Markdown files to organize and reference any amount of knowledge. Whether you organize your notes with PARA or Zettelkasten, link notes together like Roam, or simply create notes in an ad-hoc manner, Dendron can help. Think of it as a second brain to help you make sense of all the information you care about. Bonus: Dendron can also publish a static site via NextJS if also using `dendron-cli`.
-
-![dendron.dendron](https://foundation-prod-assetspublic53c57cce-8cpvgjldwysl.s3-us-west-2.amazonaws.com/assets/images/graph-intro.gif)
 
 ## [Deploy](https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-deploy)
 
@@ -685,14 +595,6 @@ To enable Emmet support in .twig files, you'll need to have the following in you
 
 ![error lens demo gif](https://user-images.githubusercontent.com/9638156/71784742-de421b00-3007-11ea-8862-8c6ea2836202.gif)
 
-## [Toggle](https://marketplace.visualstudio.com/items?itemName=rebornix.toggle)
-
-> Toggle any VS Code setting by your favorite keybindings.
-
-Example of toggling `typescript.inlayHints.functionLikeReturnTypes.enabled` by shortcut:
-
-![Toggle example demo](screenshots/toggle-example.gif)
-
 ## [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 
 > Provides Javascript and React/Redux snippets in ES7
@@ -703,6 +605,12 @@ Example of toggling `typescript.inlayHints.functionLikeReturnTypes.enabled` by s
 > Generating .gitignore files made easy.
 
 ![.gitignore generation animation](https://raw.githubusercontent.com/hasit/vscode-gi/master/assets/gi.gif)
+
+## [GistPad](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.gistfs)
+
+> Allows you to manage GitHub Gists entirely within the editor. You can open, create, delete, fork, star and clone gists, and then seamlessly begin editing files as if they were local. It's like your very own developer library for building and referencing code snippets, commonly used config/scripts, programming-related notes/documentation, and interactive samples. 
+
+![GistPad gist management](https://user-images.githubusercontent.com/116461/69910156-96274b80-13fe-11ea-9be4-d801f4e9c377.gif)
 
 ## [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 
@@ -732,26 +640,33 @@ Example of toggling `typescript.inlayHints.functionLikeReturnTypes.enabled` by s
 ![git removed indicator screenshot](https://raw.githubusercontent.com/lamartire/vscode-git-indicators/master/preview/removed.png)
 ![git modified indicator screenshot](https://raw.githubusercontent.com/lamartire/vscode-git-indicators/master/preview/modified.png)
 
+## [GitDuck](https://marketplace.visualstudio.com/items?itemName=gitduck.code-streaming)
+
+> GitDuck is a video chat tool built for developers. It enables you to talk, share your code and do pair programming with ease.
+
+![GitDuck pair programming](https://storage.googleapis.com/gitduck/img/5-img-collaborate-fallback-o.png)
+![GitDuck video chat for developers](https://storage.googleapis.com/gitduck/img/1-img-general-fallback-o.png)
+
+## [GitHub](https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-github)
+
+> Provides GitHub workflow support. For example browse project, issues, file (the current line), create and manage pull request. Support for other providers (e.g. gitlab or bitbucket) is planned.
+> Have a look at the [README.md](https://github.com/KnisterPeter/vscode-github/blob/master/README.md) on how to get started with the setup for this extension.
+
+## [GitHub Pull Request Monitor](https://marketplace.visualstudio.com/items?itemName=erichbehrens.pull-request-monitor)
+> This extension uses the GitHub api to monitor the state of your pull requests and let you know when it's time to merge or if someone requested changes.
+
+![GitHub Pull Request Monitor](https://raw.githubusercontent.com/erichbehrens/pull-request-monitor/master/images/statusBarItems.png)
+
 ## [GitLab Workflow](https://marketplace.visualstudio.com/items?itemName=gitlab.gitlab-workflow)
 > Adds a GitLab sidebar icon to view issues, merge requests and other GitLab resources.  You can also view the results of your GitLab CI/CD pipeline and check the syntax of your `.gitlab-ci.yml`.
+
+![GitLab Workflow](https://gitlab.com/gitlab-org/gitlab-vscode-extension/-/raw/master/src/assets/_issues-in-vscode.png)
 
 #### [Gradle Tasks](https://marketplace.visualstudio.com/items?itemName=richardwillis.vscode-gradle)
 
 > Run gradle tasks in VS Code.
 
 ![Gradle Tasks](https://raw.githubusercontent.com/badsyntax/vscode-gradle/master/images/screencast.gif)
-
-## [httpYac](https://marketplace.visualstudio.com/items?itemName=anweber.vscode-httpyac)
-
-> Quickly and easily send REST, Soap, GraphQL, GRPC, MQTT and WebSocket requests.
-
-![Send HTTP request and view response animation](https://raw.githubusercontent.com/AnWeber/vscode-httpyac/master/examples/oauth.gif)
-
-## [Hero Heroku](https://marketplace.visualstudio.com/items?itemName=JustBrenny.hero-heroku)
-
-> Manage your Heroku apps and pipelines without leaving VSCode.
-
-![HH Actions](https://raw.githubusercontent.com/thebrenny/hero-heroku/master/res/hero-heroku.gif)
 
 ## [Icon Fonts](https://marketplace.visualstudio.com/items?itemName=idleberg.icon-fonts)
 
@@ -784,12 +699,6 @@ Example of toggling `typescript.inlayHints.functionLikeReturnTypes.enabled` by s
 ![kanban](https://raw.githubusercontent.com/mkloubert/vscode-kanban/master/img/demo1.gif)
 
 > Simple Kanban board for use in Visual Studio Code, with time tracking and Markdown support.
-
-## [Live Code](https://marketplace.visualstudio.com/items?itemName=ambar.live-code)
-
-> Interactive code playground
-
-![Interactive code playground](https://raw.githubusercontent.com/ambar/vscode-live-code/main/example/screenshot-1.png)
 
 ## [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
@@ -825,17 +734,12 @@ Example of toggling `typescript.inlayHints.functionLikeReturnTypes.enabled` by s
 
 ![Instant Markdown Screencast](https://raw.githubusercontent.com/dbankier/vscode-instant-markdown/master/vscode-instant-markdown.gif)
 
+
 ## [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
 
 > Visual Studio Code plugin that autocompletes npm modules in import statements.
 
 ![npm-intellisense](https://raw.githubusercontent.com/ChristianKohler/NpmIntellisense/master/images/auto_complete.gif)
-
-## [Parameter Hints](https://marketplace.visualstudio.com/items?itemName=DominicVonk.parameter-hints)
-
-> Provides parameter hints on function calls in JS/TS/PHP files.
-
-![Parameter Hints](https://raw.githubusercontent.com/dominicvonk/vscode-parameter-hints/master/preview.png)
 
 ## [Partial Diff](https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff)
 
@@ -849,23 +753,17 @@ Example of toggling `typescript.inlayHints.functionLikeReturnTypes.enabled` by s
 
 ![Paste JSON as Code](https://raw.githubusercontent.com/quicktype/quicktype-vscode/master/media/demo.gif)
 
-## [Path Autocomplete](https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete)
-
-> Provides path completion for visual studio code.
-
-![Path Autocomplete](https://raw.githubusercontent.com/ionutvmi/path-autocomplete/master/demo/path-autocomplete.gif)
-
 ## [Path IntelliSense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
 > Visual Studio Code plugin that autocompletes filenames
 
 ![Autocompletion for filenames animation](https://i.giphy.com/iaHeUiDeTUZuo.gif)
 
-## [Power Tools](https://marketplace.visualstudio.com/items?itemName=egomobile.vscode-powertools)
+## [Power Tools](https://marketplace.visualstudio.com/items?itemName=ego-digital.vscode-powertools)
 
 > Extends Visual Studio Code via things like Node.js based scripts or shell commands, without writing separate extensions
 
-![Power Tools](https://raw.githubusercontent.com/egomobile/vscode-powertools/master/img/demo.gif)
+![Power Tools](https://raw.githubusercontent.com/egodigital/vscode-powertools/master/img/demo.gif)
 
 ## [PrintCode](https://marketplace.visualstudio.com/items?itemName=nobuhito.printcode)
 
@@ -906,23 +804,17 @@ Example of toggling `typescript.inlayHints.functionLikeReturnTypes.enabled` by s
 
 ![Send HTTP request and view response animation](https://raw.githubusercontent.com/Huachao/vscode-restclient/master/images/usage.gif)
 
+## [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
+
+> Synchronize settings, snippets, themes, file icons, launch, key bindings, workspaces and extensions across multiple machines using GitHub Gist
+
+![Settings Sync](https://i.imgur.com/QZtaBca.gif)
+
 ## [Text Power Tools](https://marketplace.visualstudio.com/items?itemName=qcz.text-power-tools)
 
 > All-in-one extension for text manipulation: filtering (grep), remove lines, insert number sequences and GUIDs, format content as table, change case, converting numbers and more. Great for finding information in logs and manipulating text.
 
 ![Text Power Tools](https://raw.githubusercontent.com/qcz/vscode-text-power-tools/89a1d9d7be3edfc9bcf112fe427c662655cb60cc/images/filtering.gif)
-
-## [Tidy Explorer](https://marketplace.visualstudio.com/items?itemName=bingtimren.tidy-explorer)
-> Tidy up your file explorer, hide or pin files and folders with just one click.
-
-![Tidy Explorer](https://github.com/bingtimren/vscode-tidy-explorer/raw/HEAD/images/switchboard.png)
-
-This extension allows you to configure glob patterns and group related glob patterns into "Pockets". Then you can toggle the files that match an individual pattern or all patterns in a Pocket to:
-
-- hide the files in the file Explorer (one-click adding into the "files.exclude" setting)
-- pin the files in the "Tidy Explorer"
-
-When you have a complex project with a large number of files and folders, this extension help you reduce the distractions from uninterested files (e.g. auto-generated) and focus on the files you are working on.
 
 ## [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 
@@ -951,12 +843,6 @@ When you have a complex project with a large number of files and folders, this e
 > Scaffold projects using [Yeoman](https://yeoman.io/)
 
 ![Using yeoman animation](https://raw.githubusercontent.com/SamVerschueren/vscode-yo/master/media/yo.gif)
-
-## [Timing](https://marketplace.visualstudio.com/items?itemName=HaaLeo.timing)
-
-> Time converter extension to convert timestamps from/to various formats and insert them on demand or just display them. It further provides a neat hover provider to beautify epoch timestamps instantly. All features are highly customizable.
-
-![Timing](https://raw.githubusercontent.com/HaaLeo/vscode-timing/master/doc/Convert_Sample.gif)
 
 # Formatting & Beautification
 
@@ -1022,6 +908,12 @@ When you have a complex project with a large number of files and folders, this e
 
 > Allows you to toggle your formatter on and off with a simple click
 
+## [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+
+> This extension allows matching brackets to be identified with colours. The user can define which characters to match, and which colours to use.
+
+![Bracket Pair Colorizer](https://raw.githubusercontent.com/CoenraadS/BracketPair/master/images/example.png)
+
 ## [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
 > Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX.
 
@@ -1043,11 +935,6 @@ When you have a complex project with a large number of files and folders, this e
 
 ![City Lights Icons](https://raw.githubusercontent.com/yummygum/city-lights-icons-vsc/master/city-lights-icon-preview.gif)
 
-### [Feather Product Icons](https://marketplace.visualstudio.com/items?itemName=melishev.feather-vscode)
-> Awesome set of product icons, by [Feather Icons](https://github.com/feathericons)
-
-![Feather Product Icons](https://raw.githubusercontent.com/melishev/feather-vscode/master/.github/assets/preview.png)
-
 ### [VSCode Icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
 ![VSCode Icons](https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/images/screenshot.gif)
@@ -1062,17 +949,17 @@ When you have a complex project with a large number of files and folders, this e
 
 # Uncategorized
 
+## [Ascii Tree Generator](https://marketplace.visualstudio.com/items?itemName=aprilandjan.ascii-tree-generator)
+
+> A VS Code extension to generate ascii tree of directories or format selected text to tree strings.
+
+![Ascii Tree Generator Demo](https://raw.githubusercontent.com/aprilandjan/ascii-tree-generator/master/images/text.gif)
+
 ## [Browser Preview](https://marketplace.visualstudio.com/items?itemName=auchenberg.vscode-browser-preview)
 
 > Browser Preview for VS Code enables you to open a real browser preview inside your editor that you can debug. Browser Preview is powered by Chrome Headless, and works by starting a headless Chrome instance in a new process. This enables a secure way to render web content inside VS Code, and enables interesting features such as in-editor debugging and more!
 
 ![Browser Preview Demo](https://raw.githubusercontent.com/auchenberg/vscode-browser-preview/master/resources/demo.gif)
-
-## [CodeRoad](https://marketplace.visualstudio.com/items?itemName=CodeRoad.coderoad)
-
-> Play interactive tutorials in your favorite editor.
-
-![CodeRoad Demo](https://raw.githubusercontent.com/coderoad/coderoad-vscode/master/docs/static/gif/coderoad-example.gif)
 
 ## [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
@@ -1084,7 +971,7 @@ When you have a complex project with a large number of files and folders, this e
 
 > Automatic time reports by project and other programming metrics right in VS Code.
 
-![Code Time](https://camo.githubusercontent.com/918d2dfc585074f3b20566723f3ab8ce32e9d23e/68747470733a2f2f737764632d7673636f64652e73332d75732d776573742d312e616d617a6f6e6177732e636f6d2f636f64652d74696d652d66656174757265732e706e67)
+![Code Time](https://raw.githubusercontent.com/swdotcom/swdc-vscode/master/images/vs-code-dashboard.gif)
 
 ## [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 
@@ -1137,12 +1024,6 @@ When you have a complex project with a large number of files and folders, this e
 
 ![iTerm2 Theme Sync](https://raw.githubusercontent.com/tusaeff/vscode-iterm2-theme-sync/master/screencast.gif)
 
-## [Password Generator](https://marketplace.visualstudio.com/items?itemName=ftonato.password-generator)
-
-> Create a secure password using our generator tool. Help prevent a security threat by getting a strong password today.
-
-![Password Generator](https://raw.githubusercontent.com/ftonato/vscode-password-generator/master/preview.gif)
-
 ## [PlatformIO](https://marketplace.visualstudio.com/items?itemName=formulahendry.platformio)
 
 > An open source ecosystem for IoT development: supports 350+ embedded boards, 20+ development platforms, 10+ frameworks. Arduino and ARM mbed compatible.
@@ -1177,6 +1058,12 @@ When you have a complex project with a large number of files and folders, this e
 
 ![Send messages or code snippets to Slack animation](https://raw.githubusercontent.com/sozercan/vscode-slack/master/slack-upload.gif)
 
+## [SmoothType](https://marketplace.visualstudio.com/items?itemName=spikespaz.vscode-smoothtype)
+
+> Add a smooth typing animation, similar to MS Office and the Windows 10 Mail app.
+
+![SmoothType Animation](https://raw.githubusercontent.com/spikespaz/vscode-smoothtype/master/images/preview.gif)
+
 ## [Spotify](https://marketplace.visualstudio.com/items?itemName=shyykoserhiy.vscode-spotify)
 > Provides integration with Spotify Desktop client. Shows the currently playing song in status bar, search lyrics and provides commands for controlling Spotify with buttons and hotkeys.
 
@@ -1206,17 +1093,14 @@ When you have a complex project with a large number of files and folders, this e
 
 ![ESDOC MDN](https://raw.githubusercontent.com/samundrak/vscode-esdoc-mdn/master/demo.gif)
 
+
+![Interface generator (Typescript)](https://raw.githubusercontent.com/ryu1kn/vscode-text-marker/master/images/animations/public.gif)
+
 ## [Interface generator](https://marketplace.visualstudio.com/items?itemName=dotup.dotup-vscode-interface-generator)
 
 > Quickly generate interface definitions from typescript class
 
 ![Interface generator](https://raw.githubusercontent.com/dotupNET/dotup-vscode-interface-generator/master/images/video2.gif)
-
-## [JFrog](https://marketplace.visualstudio.com/items?itemName=JFrog.jfrog-vscode-extension)
-
-> Adds JFrog Xray scanning of project dependencies to your VS Code IDE. It allows developers to view panels displaying vulnerability information about the components and their dependencies directly in their VS Code IDE. The extension also allows developers to track the status of the code while it is being built, tested and scanned on the CI server.
-
-![JFrog](https://raw.githubusercontent.com/jfrog/jfrog-vscode-extension/master/resources/readme/gifs/show_in_dependency_tree.gif)
 
 # Themes
 
@@ -1477,7 +1361,7 @@ A list of Twitter accounts for various people in the VS Code Community
 - [@johannesrieken](https://twitter.com/johannesrieken) - VS Code Dev
 - [@lannonbr](https://twitter.com/lannonbr) - Creator of vscode.rocks & JS Parameter Annotations extension
 - [@maeschli](https://twitter.com/maeschli) - VS Code Dev
-- [@mattbierner](https://twitter.com/mattbierner) - VS Code Dev
+- [@mattbierner](https://twitter.com/code) - VS Code Dev
 - [@MrAhmadAwais](https://twitter.com/MrAhmadAwais) - JS/WordPress Core Dev. Creator of VSCode.pro course & Shades of Purple theme
 - [@ramyanexus](https://twitter.com/ramyanexus) - VS Code Dev. Maintainer of Go extension
 - [@Tyriar](https://twitter.com/Tyriar) - VS Code Dev. Creator of xterm.js
@@ -1487,12 +1371,13 @@ A list of Twitter accounts for various people in the VS Code Community
 ## Documentation
 
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) - The Better Comments extension will help you create more human-friendly comments in your code.
-- [Visual Studio Code API](https://code.visualstudio.com/api) section of [Official Documentation](https://code.visualstudio.com/docs)
+- [Extending Visual Studio Code](https://code.visualstudio.com/docs/extensions/overview) section of [Official Documentation](https://code.visualstudio.com/docs)
 
 ## Libraries
 
+- [vscode-extension-vscode](https://github.com/Microsoft/vscode-extension-vscode) - The vscode.d.ts node module
+- [vscode-set-text](https://github.com/samverschueren/vscode-set-text) - An easy-to-use VS Code `#setText()` method.
 - [vscode-test-content](https://github.com/mlewand-org/vscode-test-content) - A method to set/get editor content, and it's selection. Especially useful for unit tests.
-- [typed-vscode](https://www.npmjs.com/typed-vscode) - Generates types from contribution points of your extension manifest
 
 ## Tools
 
