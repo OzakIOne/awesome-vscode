@@ -129,6 +129,7 @@ out <a href="https://github.com/sindresorhus/awesome">awesome</a>.
   - [Remote VSCode](#remote-vscode)
   - [REST Client](#rest-client)
   - [Text Power Tools](#text-power-tools)
+  - [Tidy Explorer](#tidy-explorer)
   - [Todo Tree](#todo-tree)
   - [Toggle Quotes](#toggle-quotes)
   - [Typescript Destructure](#typescript-destructure)
@@ -872,8 +873,10 @@ Example of toggling `typescript.inlayHints.functionLikeReturnTypes.enabled` by s
 
 ![Text Power Tools](https://raw.githubusercontent.com/qcz/vscode-text-power-tools/89a1d9d7be3edfc9bcf112fe427c662655cb60cc/images/filtering.gif)
 
-#### [Tidy Explorer](https://marketplace.visualstudio.com/items?itemName=bingtimren.tidy-explorer)
+## [Tidy Explorer](https://marketplace.visualstudio.com/items?itemName=bingtimren.tidy-explorer)
 > Tidy up your file explorer, hide or pin files and folders with just one click.
+
+![Tidy Explorer](https://github.com/bingtimren/vscode-tidy-explorer/raw/HEAD/images/switchboard.png)
 
 This extension allows you to configure glob patterns and group related glob patterns into "Pockets". Then you can toggle the files that match an individual pattern or all patterns in a Pocket to:
 
