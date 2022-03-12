@@ -106,6 +106,7 @@ A curated list of delightful [Visual Studio Code](https://code.visualstudio.com/
   - [Project Manager](#project-manager)
   - [REST Client](#rest-client)
   - [Rainbow CSV](#rainbow-csv)
+  - [Recall](#recall)
   - [Remote Development](#remote-development)
   - [Remote VSCode](#remote-vscode)
   - [Rush Snippets](#rush-snippets)
@@ -808,6 +809,12 @@ To enable Emmet support in .twig files, you'll need to have the following in you
 > Highlight columns in comma, tab, semicolon and pipe separated files, consistency check and linting with CSVLint, multi-cursor column editing, column trimming and realignment, and SQL-style querying with RBQL.
 
 ![Rainbow CSV](https://i.imgur.com/PRFKVIN.png)
+
+## [Recall](https://marketplace.visualstudio.com/items?itemName=frenya.vscode-recall)
+
+> VSCode extenstion that helps you memorize anything using spaced repetition with flashcards auto-detected directly from your Markdown notes.
+
+![Recall at work](https://recall.frenya.net/assets/img/screenshot.gif)
 
 ## [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
