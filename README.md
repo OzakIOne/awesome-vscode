@@ -143,6 +143,7 @@ A curated list of delightful [Visual Studio Code](https://code.visualstudio.com/
   - [Carbon-now-sh](#carbon-now-sh)
   - [Code Runner](#code-runner)
   - [Code Time](#code-time)
+  - [Cointy](#cointy)
   - [Color Highlight](#color-highlight)
   - [Output Colorizer](#output-colorizer)
   - [Dash](#dash)
@@ -995,6 +996,12 @@ To enable Emmet support in .twig files, you'll need to have the following in you
 > Automatic time reports by project and other programming metrics right in VS Code.
 
 ![Code Time](https://raw.githubusercontent.com/swdotcom/swdc-vscode/master/images/vs-code-dashboard.gif)
+
+## [Cointy](https://marketplace.visualstudio.com/items?itemName=aofdev.cointy)
+
+> A check for cryptocurrency prices as you code.
+
+![Cointy](https://raw.githubusercontent.com/aofdev/vscode-cointy/main/demo-vscode-cointy.gif)
 
 ## [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 
