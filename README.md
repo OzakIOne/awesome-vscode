@@ -872,6 +872,16 @@ Example of toggling `typescript.inlayHints.functionLikeReturnTypes.enabled` by s
 
 ![Text Power Tools](https://raw.githubusercontent.com/qcz/vscode-text-power-tools/89a1d9d7be3edfc9bcf112fe427c662655cb60cc/images/filtering.gif)
 
+#### [Tidy Explorer](https://marketplace.visualstudio.com/items?itemName=bingtimren.tidy-explorer)
+> Tidy up your file explorer, hide or pin files and folders with just one click.
+
+This extension allows you to configure glob patterns and group related glob patterns into "Pockets". Then you can toggle the files that match an individual pattern or all patterns in a Pocket to:
+
+- hide the files in the file Explorer (one-click adding into the "files.exclude" setting)
+- pin the files in the "Tidy Explorer"
+
+When you have a complex project with a large number of files and folders, this extension help you reduce the distractions from uninterested files (e.g. auto-generated) and focus on the files you are working on.
+
 ## [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 
 > Custom keywords, highlighting, and colors for TODO comments. As well as a sidebar to view all your current tags.
